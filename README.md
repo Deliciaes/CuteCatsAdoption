@@ -1,4 +1,4 @@
-<img src="https://tenor.com/2XS3.gif">
+<img src="https://c.tenor.com/hHaVzeiH-hcAAAAC/imsickofwork-technologysu-x.gif">
 
 # Cute Cat Randomizer
 
