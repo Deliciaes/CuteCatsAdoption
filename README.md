@@ -1,12 +1,12 @@
-INSERT MANDATORY GIF
+<img src="https://tenor.com/2XS3.gif">
 
-# Project Title
+# Cute Cat Randomizer
 
-Text about the project and why it exists. This would also be a great place to link the project on One.com.
+The aim is to give you some random cute cat information and cat facts. Aimed at a demographic who wants to know more about cats, love cats or both. Ages 5 years and up.
 
 # Installation
 
-Add the installation instructions.
+Coming soon
 
 # Code Review
 
