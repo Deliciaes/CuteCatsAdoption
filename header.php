@@ -23,3 +23,4 @@ require __DIR__ . '/data.php';
         <div class="header">
             <h1>Welcome to the Cute Cats Randomizer</h1>
         </div>
+        <div class="menu"><a href="#">Home</a> <a href="#">Gallery</a> <a href="#">Randomizer</a></div>

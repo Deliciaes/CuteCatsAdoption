@@ -3,8 +3,38 @@
 .header {
   grid-area: header;
 }
+.menu {
+  grid-area: menu;
+  margin-bottom: 1rem;
+}
+
+.menu a {
+  font-family: 'Rampart One';
+  color: black;
+  word-spacing: 2em;
+}
+
 .contents {
   grid-area: contents;
+}
+
+.randomcat {
+  text-align: center;
+  border-style: double;
+  border-color: grey;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  font-family: 'Rampart One';
+  color: rgb(13, 119, 219);
+  border-style: dotted;
+  background: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 1em;
+  border-radius: 20%;
 }
 .footer {
   grid-area: footer;
@@ -16,15 +46,19 @@
   grid-template-rows: auto;
   grid-template-areas:
     'header'
+    'menu'
     'contents'
     'footer';
   max-width: 1000px;
   justify-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5%;
 }
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 2rem 1rem 1rem 1rem;
+  background-image: url('photos/background.png');
 }
 
 h1 {
