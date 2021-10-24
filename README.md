@@ -1,8 +1,8 @@
 <img src="https://c.tenor.com/hHaVzeiH-hcAAAAC/imsickofwork-technologysu-x.gif">
 
-# Cute Cat Randomizer
+# Cute Cats Gallery
 
-The aim is to give you some random cute cat information and cat facts. Aimed at a demographic who wants to know more about cats, love cats or both. Ages 5 years and up.
+The aim is to give you some random cute cat information and cat facts along with the option to view random cats. Aimed at a demographic who wants to know more about cats, love cats or both. Ages 5 years and up.
 
 # Installation
 
