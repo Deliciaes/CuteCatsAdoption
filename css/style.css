@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 2rem 1rem 1rem 1rem;
+  background-image: url('../photos/background.png');
+  text-align: center;
+}
+
+button {
+  font-family: 'Comfortaa';
+  color: seashell;
+  border-style: dotted;
+  background: rgb(155, 185, 212);
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 1em;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: 'Comfortaa';
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.randomcat {
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation {
+  text-align: center;
+  font-size: 1.5em;
+}
+.navigation a {
+  font-family: 'Comfortaa';
+  color: black;
+}
+.navigation ul {
+  list-style-type: none;
+  padding-left: 0%;
+}
+
+.navigation li {
+  display: inline;
+  margin-left: 1em;
+}
+
+footer ul {
+  list-style-type: none;
+}
+footer li {
+  display: inline;
+}

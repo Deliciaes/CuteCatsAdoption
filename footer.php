@@ -1,8 +1,13 @@
-<div class="footer">
-    Designed by:
-    <?php echo $name; ?>. I am studying <?php echo $course; ?>, class <?php echo $class; ?> at <?php echo $school; ?>. This is is my first PHP project. Visit me on <a href="<?php echo $github; ?>">GitHub</a> (username: <?php echo $alias; ?>)
+<footer>
+    <div class="footer">
+        <?php echo $footerInfo; ?>.
+        <ul>
+            <li> <a href="mailto:<?php echo $company['email']; ?>"><?php echo $company['name'] ?></a></li>
+            <li> <a href="tel:<?php echo $company['phone']; ?>"><?php echo $company['phone'] ?></a></li>
+        </ul>
 
-</div>
+    </div>
+</footer>
 </body>
 
 </html>

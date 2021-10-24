@@ -5,8 +5,6 @@ require __DIR__ . ('/data.php');
 require __DIR__ . ('/catsdata.php');
 
 
-
-
 function getQuote($catQuotes)
 {
     shuffle($catQuotes);
@@ -15,9 +13,3 @@ function getQuote($catQuotes)
 }
 
 $quote = getQuote($catQuotes);
-
-function sortByName()
-{
-
-    sort($cats);
-}
