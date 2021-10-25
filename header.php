@@ -31,6 +31,7 @@ require __DIR__ . "/functions.php";
                 <ul>
                     <li><a href="index.php">Home</a></li>
                     <li><a href="gallery.php">Our Cats</a></li>
+                    <li><a href="#">Stories</a></li>
                     <li><a href="#">Contact us</a></li>
 
                 </ul>

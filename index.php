@@ -14,7 +14,7 @@
     <p><img src="<?php echo $cat['photo'] ?>" width="350px"></p>
 </div>
 
-</div>
+
 
 
 <?php require_once('footer.php'); ?>

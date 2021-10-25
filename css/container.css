@@ -7,11 +7,9 @@
     'menu'
     'contents'
     'footer';
-  max-width: 1440px;
-  justify-content: center;
-  align-content: center;
+  justify-content: left;
+  align-content: left;
   grid-auto-flow: row;
-  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 5%;
   margin: auto;
 }
@@ -21,13 +19,15 @@
 }
 .menu {
   grid-area: menu;
-  margin-bottom: 1rem;
 }
 
 .contents {
   grid-area: contents;
+  justify-content: center;
+  align-content: center;
 }
 
 .footer {
   grid-area: footer;
+  background-color: rgba(255, 255, 255, 0.8);
 }

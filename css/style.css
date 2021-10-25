@@ -35,13 +35,23 @@ h1 {
   justify-content: center;
 }
 
+.header {
+  max-width: 200px;
+}
+
 .navigation {
-  text-align: center;
-  font-size: 1.5em;
+  text-align: left;
+  font-size: 1em;
+  margin-bottom: 1rem;
 }
 .navigation a {
   font-family: 'Comfortaa';
-  color: black;
+  color: seashell;
+  border-style: dotted;
+  background: rgb(155, 185, 212);
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-radius: 10%;
 }
 .navigation ul {
   list-style-type: none;
