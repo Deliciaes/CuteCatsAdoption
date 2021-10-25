@@ -7,7 +7,8 @@
     <?php endif ?> </p>
 
 <div class="gallery">
-    <?php for ($i = 0; $i < count($cats); $i++) : ?>
+    <?php sort($cats);
+    for ($i = 0; $i < count($cats); $i++) : ?>
         <div><img src="<?php echo $cats[$i]['photo']; ?>" alt="<?php echo $cats[$i]['name'] ?> the cat" width="300px">
             <p><?php echo $cats[$i]['name'] ?>, <?php echo $cats[$i]['age'] ?> years old.</p>
         </div>

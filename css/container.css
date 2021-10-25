@@ -16,18 +16,20 @@
 
 .header {
   grid-area: header;
+  display: grid;
 }
 .menu {
   grid-area: menu;
+  display: grid;
 }
 
 .contents {
   grid-area: contents;
-  justify-content: center;
-  align-content: center;
+  display: grid;
 }
 
 .footer {
   grid-area: footer;
+  display: grid;
   background-color: rgba(255, 255, 255, 0.8);
 }
