@@ -1,6 +1,6 @@
 <img src="https://c.tenor.com/hHaVzeiH-hcAAAAC/imsickofwork-technologysu-x.gif">
 
-# Cute Cats Adotion
+# Cute Cats Adoption
 
 Adoption center where you can browse the cats up for adoption.
 
