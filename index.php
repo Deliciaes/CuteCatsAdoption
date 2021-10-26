@@ -3,6 +3,9 @@
 
 <p>We want to help as many cats as possible by freeing up space in our centre for emergency cases, as well as helping some of our cats who have been with us longer to find a lovely new home. We're also keen to provide potential owners with their purrfect match.</p>
 <p>Please visit the "Our Cats" section to view available cats, or click the button below to display a random cat.</p>
+<p>
+    This list was last updated on
+    <?php echo $catsLastUpdated ?> </p>
 <div class="randomcat">
     <button onClick="window.location.reload();">Show me another cat!</button>
     <div><?php echo $quote ?></div>

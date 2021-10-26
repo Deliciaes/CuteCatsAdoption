@@ -13,3 +13,12 @@ function getQuote($catQuotes)
 }
 
 $quote = getQuote($catQuotes);
+
+
+function getCatsLastUpdated($file)
+{
+    if (file_exists($file))
+        return date("F d Y", filemtime($file));
+}
+
+$catsLastUpdated = getCatsLastUpdated($file);

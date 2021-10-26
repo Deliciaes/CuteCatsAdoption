@@ -1,10 +1,10 @@
 <?php require_once('header.php'); ?>
 
 <p>Meet our cats!</p>
-<p>We currently have <?php echo count($cats); ?> cats in our cat café.</p>
-<p><?php if (file_exists($file)) : ?>
-        Last updated on <?php echo date("F d Y", filemtime($file)); ?>.
-    <?php endif ?> </p>
+<p>We currently have <?php echo count($cats); ?> cats for adoption.</p>
+<p>
+    This list was last updated on
+    <?php echo $catsLastUpdated ?> </p>
 
 <div class="gallery">
     <?php sort($cats);
