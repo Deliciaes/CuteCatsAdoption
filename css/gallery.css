@@ -1,8 +1,8 @@
 .gallery {
   display: grid;
-  grid-template-columns: repeat(4, 300px);
   grid-auto-rows: auto;
   grid-gap: 15px;
+  text-align: center;
 }
 
 .gallery p {
@@ -12,11 +12,16 @@
 
 .gallery img {
   max-width: 300px;
+  border-style: dashed;
+  border-color: lemonchiffon;
+  border-radius: 5%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 720px) {
   .gallery {
     grid-template-columns: repeat(1, 250px);
+    display: block;
+    text-align: center;
   }
 
   .gallery img {
@@ -24,7 +29,7 @@
   }
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 767px) {
   .gallery {
     grid-template-columns: repeat(2, 290px);
   }
@@ -35,7 +40,7 @@
 
 @media screen and (min-width: 960px) {
   .gallery {
-    grid-template-columns: repeat(4, 290px);
+    grid-template-columns: repeat(3, 290px);
   }
   .gallery img {
     max-width: 290px;
@@ -44,6 +49,6 @@
 
 @media screen and (min-width: 1440px) {
   .gallery {
-    grid-template-columns: repeat(4, 300px);
+    grid-template-columns: repeat(5, 300px);
   }
 }

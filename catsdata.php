@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+// multidimensional  array
 
 $cats = [
 

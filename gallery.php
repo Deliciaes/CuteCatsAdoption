@@ -1,10 +1,10 @@
 <?php require_once('header.php'); ?>
 
-<p>Meet our cats!</p>
-<p>We currently have <?php echo count($cats); ?> cats for adoption.</p>
-<p>
-    This list was last updated on
-    <?php echo $catsLastUpdated ?> </p>
+<h1>Meet our cats!</h1>
+<article>We currently have <?php echo count($cats); ?> cats available for adoption.</article>
+
+<h5>This list was last updated on: <?php echo getCatsLastUpdated($file) ?></h5>
+
 
 <div class="gallery">
     <?php sort($cats);

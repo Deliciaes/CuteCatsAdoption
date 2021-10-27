@@ -22,19 +22,19 @@ require __DIR__ . "/functions.php";
 
 <body>
     <div class="container">
-        <div class="header">
-            <img src="photos/logo.png">
-            <h1>Cute Cats Adoption Center</h1>
-        </div>
-        <nav>
-            <div class="navigation">
-                <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="gallery.php">Our Cats</a></li>
-                    <li><a href="#">Stories</a></li>
-                    <li><a href="#">Contact us</a></li>
+        <header>
+            <nav>
+                <div class="navigation">
+                    <img src="photos/logo.png">
+                    <h1><?php echo $company['name']; ?></h1>
+                    <ul>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="gallery.php">Our Cats</a></li>
+                        <li><a href="stories.php">Stories</a></li>
+                        <li><a href="form.php">Contact us</a></li>
 
-                </ul>
-            </div>
-        </nav>
+                    </ul>
+                </div>
+            </nav>
+        </header>
         <div class="contents">

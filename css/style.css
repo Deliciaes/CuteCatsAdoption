@@ -1,57 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'comfortaa';
   margin: 2rem 1rem 1rem 1rem;
   background-image: url('../photos/background.png');
-  text-align: center;
 }
 
 button {
-  font-family: 'Comfortaa';
   color: seashell;
   border-style: dotted;
-  background: rgb(155, 185, 212);
+  background: rgba(0, 0, 0, 0.5);
   font-weight: 600;
   font-size: 1.2rem;
   margin: 1em;
   border-radius: 20%;
   cursor: pointer;
+  padding: 1em;
 }
 
 h1 {
-  font-family: 'Comfortaa';
   font-weight: bold;
   font-size: 2rem;
   text-align: center;
 }
 
+h3 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+p {
+  font-weight: bold;
+}
+
 .randomcat {
+  display: block;
+  text-align: center;
   font-weight: bold;
   margin-top: 1rem;
   margin-bottom: 1rem;
-
-  align-items: center;
-  justify-content: center;
 }
 
-.header {
-  max-width: 200px;
+.randomcat img {
+  border-style: dashed;
+  border-color: lemonchiffon;
+  border-radius: 5%;
 }
 
-.navigation {
-  text-align: left;
-  font-size: 1em;
-  margin-bottom: 1rem;
-}
 .navigation a {
-  font-family: 'Comfortaa';
   color: seashell;
   border-style: dotted;
   background: rgb(155, 185, 212);
   font-weight: 600;
   font-size: 1.2rem;
   border-radius: 10%;
+  padding: 0.5em;
 }
 .navigation ul {
   list-style-type: none;
@@ -59,13 +69,26 @@ h1 {
 }
 
 .navigation li {
-  display: inline;
-  margin-left: 1em;
+  margin-bottom: 2em;
 }
 
 footer ul {
   list-style-type: none;
+  float: left;
 }
 footer li {
-  display: inline;
+  float: left;
+  padding-right: 2em;
+}
+
+input,
+label,
+textarea {
+  display: block;
+}
+
+@media screen and (min-width: 960px) {
+  .navigation li {
+    display: inline;
+  }
 }
