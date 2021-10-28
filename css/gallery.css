@@ -1,7 +1,12 @@
+.galleryparent {
+  display: grid;
+  justify-content: center;
+}
+
 .gallery {
   display: grid;
   grid-auto-rows: auto;
-  grid-gap: 15px;
+  grid-gap: 50px;
   text-align: center;
 }
 
@@ -12,8 +17,8 @@
 
 .gallery img {
   max-width: 300px;
-  border-style: dashed;
-  border-color: lemonchiffon;
+  border-style: solid;
+  border-color: black;
   border-radius: 5%;
 }
 

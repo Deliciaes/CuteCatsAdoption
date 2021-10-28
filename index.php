@@ -1,6 +1,6 @@
 <?php require_once('header.php'); ?>
 
-
+<h1>Cute Cats Adoption Center - We have the cutest cats!</h1>
 <article>
     <p>We want to help as many cats as possible by freeing up space in our centre for emergency cases, as well as helping some of our cats who have been with us longer to find a lovely new home.</p>
     <p>We are also keen to provide potential owners with their purrfect match.</p>

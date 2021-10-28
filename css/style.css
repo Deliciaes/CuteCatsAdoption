@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'comfortaa';
-  margin: 2rem 1rem 1rem 1rem;
+  margin: 2rem 0rem 1rem 0rem;
   background-image: url('../photos/background.png');
 }
 
 button {
-  color: seashell;
-  border-style: dotted;
-  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-style: hidden;
+  background: rgb(51, 85, 116);
   font-weight: 600;
   font-size: 1.2rem;
   margin: 1em;
@@ -17,7 +19,9 @@ button {
   cursor: pointer;
   padding: 1em;
 }
-
+button:hover {
+  background-color: rgb(226, 126, 33);
+}
 h1 {
   font-weight: bold;
   font-size: 2rem;
@@ -42,26 +46,28 @@ p {
 
 .randomcat {
   display: block;
-  text-align: center;
   font-weight: bold;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
 .randomcat img {
-  border-style: dashed;
-  border-color: lemonchiffon;
+  border-style: solid;
+  border-color: black;
   border-radius: 5%;
 }
 
 .navigation a {
-  color: seashell;
-  border-style: dotted;
-  background: rgb(155, 185, 212);
+  color: white;
+  background: rgb(51, 85, 116);
   font-weight: 600;
   font-size: 1.2rem;
   border-radius: 10%;
   padding: 0.5em;
+}
+
+.navigation a:hover {
+  background: rgb(226, 126, 33);
 }
 .navigation ul {
   list-style-type: none;
@@ -74,20 +80,27 @@ p {
 
 footer ul {
   list-style-type: none;
-  float: left;
 }
 footer li {
-  float: left;
   padding-right: 2em;
+}
+
+footer a {
+  color: rgb(33, 133, 226);
+}
+
+footer a:hover {
+  color: rgb(226, 126, 33);
 }
 
 input,
 label,
 textarea {
   display: block;
+  margin: auto;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 721px) {
   .navigation li {
     display: inline;
   }

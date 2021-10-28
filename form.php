@@ -12,25 +12,28 @@ if (isset($_POST['name'], $_POST['email'], $_POST['phone'], $_POST['message'])) 
 
 ?>
 
-You can contact us by calling us or visiting us, or by filling in the form below:
-<p>Contact form:</p>
+<h1>Contact us</h1>
+<p>You can contact us by calling us or visiting us, or by filling in the form below:</p>
 <div class="form">
 
     <form action="form.php" method="post">
 
 
-        <p><label for="name">Name</label></p>
-        <p><input type="text" name="name" required></p>
+        <p><label for="name">Name</label>
+            <input type="text" name="name" required>
+        </p>
 
-        <p><label for="email">Email</label></p>
-        <p><input type="email" name="email" required></p>
+        <p><label for="email">Email</label>
+            <input type="email" name="email" required>
+        </p>
 
         <p><label for="phone">Phone number</label>
             <input type="text" name="phone">
         </p>
 
-        <p><label for="message">Message</label></p>
-        <p><textarea name="message" id="message" required></textarea></p>
+        <p><label for="message">Message</label>
+            <textarea name="message" id="message" required></textarea>
+        </p>
 
         <p><button type="submit">Submit</button></p>
     </form>

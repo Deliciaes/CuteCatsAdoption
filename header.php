@@ -28,7 +28,7 @@ require __DIR__ . "/functions.php";
                     <img src="photos/logo.png">
                     <h1><?php echo $company['name']; ?></h1>
                     <ul>
-                        <li><a href="index.php">Home</a></li>
+                        <li><a href="index.php#contents">Home</a></li>
                         <li><a href="gallery.php">Our Cats</a></li>
                         <li><a href="stories.php">Stories</a></li>
                         <li><a href="form.php">Contact us</a></li>
@@ -37,4 +37,5 @@ require __DIR__ . "/functions.php";
                 </div>
             </nav>
         </header>
-        <div class="contents">
+        <div class="banner"></div>
+        <div class="contents" id="contents">
