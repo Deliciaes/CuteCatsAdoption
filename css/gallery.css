@@ -22,6 +22,38 @@
   border-radius: 5%;
 }
 
+.horizontalparent {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.horizontal {
+  display: grid;
+  min-width: 353px;
+}
+.horizontal p {
+  padding-right: 3em;
+}
+.horizontal label {
+  float: left;
+  clear: none;
+  display: block;
+  padding: 0px 1em 0px 8px;
+}
+
+input[type='radio'],
+input.radio {
+  float: left;
+  clear: none;
+  margin: 2px 0 0 2px;
+}
+.box {
+  font-family: 'Comfortaa';
+  padding-right: 3em;
+  font-size: large;
+}
 @media screen and (max-width: 720px) {
   .gallery {
     grid-template-columns: repeat(1, 250px);

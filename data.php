@@ -19,7 +19,7 @@ $catQuotes = [
 $company = [
     'name' => 'Cute Cats Adoption Center',
     'email' => 'info@cutecatsadoption.co.uk',
-    'phone' => '0000000',
+    'phone' => 123456789,
     'openingHours' => 'Mon-Fri, 08:00-17:00',
     'address' => '19 Station Street, Belfast BT3 9DA, Northern Ireland',
 ];
@@ -38,3 +38,5 @@ $file = 'catsdata.php';
 $prizeOfTheWeek = '1kg cat food';
 $latestWinner = 'Simon';
 $lastPrize = '1kg cat sand';
+$femaleCats = 'female';
+$maleCats = 'male';
