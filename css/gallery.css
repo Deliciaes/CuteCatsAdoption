@@ -31,10 +31,11 @@
 
 .horizontal {
   display: grid;
-  min-width: 353px;
+  justify-content: center;
 }
 .horizontal p {
-  padding-right: 3em;
+  padding-left: 9em;
+  min-width: 455px;
 }
 .horizontal label {
   float: left;
