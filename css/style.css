@@ -56,10 +56,20 @@ p {
   border-color: black;
   border-radius: 5%;
 }
+.blueparent {
+  display: grid;
+  justify-content: center;
+}
+.blue {
+  background-color: rgb(104, 166, 224, 0.4);
+  min-width: 20em;
+  padding: 1em;
+  border-radius: 3%;
+}
 
 .navigation a {
   color: white;
-  background: rgb(51, 85, 116);
+  background: rgb(104, 166, 224);
   font-weight: 600;
   font-size: 1.2rem;
   border-radius: 10%;
@@ -85,11 +95,13 @@ footer li {
   padding-right: 2em;
 }
 
-footer a {
+footer a,
+.contents a {
   color: rgb(33, 133, 226);
 }
 
-footer a:hover {
+footer a:hover,
+.contents a:hover {
   color: rgb(226, 126, 33);
 }
 

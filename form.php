@@ -1,19 +1,18 @@
-<?php require_once('header.php'); ?>
+<?php
+
+require_once('header.php'); ?>
 
 <?php
 
 if (isset($_POST['name'], $_POST['email'], $_POST['phone'], $_POST['message'])) {
-    $name = sanitizeForm($_POST['name']);
-    $email = sanitizeForm($_POST['email']);
-    $phone = sanitizeForm($_POST['phone']);
-    $message = sanitizeForm($_POST['message']);
+    sanitizeForm($_POST['name'], $_POST['email'], $_POST['phone'], $_POST['message']);
 }
 
 
 ?>
 
 <h1>Contact us</h1>
-<p>You can contact us by calling us or visiting us, or by filling in the form below:</p>
+<p>You can contact us by calling or visiting, or by filling in the form below:</p>
 <div class="form">
 
     <form action="form.php" method="post">
@@ -37,21 +36,22 @@ if (isset($_POST['name'], $_POST['email'], $_POST['phone'], $_POST['message'])) 
 
         <p><button type="submit">Submit</button></p>
     </form>
+    <div class="blueparent">
+        <?php if (isset($_POST['name'], $_POST['email'], $_POST['phone'], $_POST['message'])) : ?>
+            <div class="blue">
+                <h2>Thank you for your message. We will get back to you. Information submitted:</h2>
+                <p>
+                <h4>Name:</h4> <?php echo $_POST['name']; ?></p>
+                <p>
+                <h4>Email:</h4> <?php echo $_POST['email'] ?></p>
+                <p>
+                <h4>Phone number:</h4> <?php echo $_POST['phone']; ?></p>
+                <p>
+                <h4>Message:</h4> <?php echo $_POST['message']; ?></p>
+            </div>
 
-    <?php if (isset($name, $email, $phone, $message)) : ?>
-        Thank you for your message. We will get back to you. Information submitted:
-        <p>Name: <?php echo $name; ?></p>
-        <p>Email: <?php echo $email; ?></p>
-        <p>Phone number: <?php echo $phone; ?></p>
-        <p>Message: <?php echo $phone; ?></p>
-
-    <?php endif ?>
-
-
-
-
-
-
+        <?php endif ?>
+    </div>
 
 </div>
-<?php require_once('footer.php'); ?>
+<?php require_once('footer.php');

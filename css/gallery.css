@@ -54,6 +54,6 @@
 
 @media screen and (min-width: 1440px) {
   .gallery {
-    grid-template-columns: repeat(5, 300px);
+    grid-template-columns: repeat(4, 300px);
   }
 }
