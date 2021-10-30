@@ -19,9 +19,11 @@ button {
   cursor: pointer;
   padding: 1em;
 }
+
 button:hover {
   background-color: rgb(226, 126, 33);
 }
+
 h1 {
   font-weight: bold;
   font-size: 2rem;
@@ -56,14 +58,16 @@ p {
   border-color: black;
   border-radius: 5%;
 }
+
 .blueparent {
   display: grid;
   justify-content: center;
 }
+
 .blue {
   background-color: rgb(104, 166, 224, 0.4);
   min-width: 20em;
-  padding: 1em;
+  margin: 1em;
   border-radius: 3%;
 }
 
@@ -79,6 +83,7 @@ p {
 .navigation a:hover {
   background: rgb(226, 126, 33);
 }
+
 .navigation ul {
   list-style-type: none;
   padding-left: 0%;

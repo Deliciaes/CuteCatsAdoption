@@ -26,49 +26,45 @@
     <option value="age" name="Age">Age</option>
     <option value="eye color" name="Eye color">Eye color</option>
     <option value="fur color" name="Fur color">Fur color</option>
-
 </select>
 <button type="submit">Sort</button>
-
 </form>
 
+
 <div class="galleryparent">
-    <p><?php
-        if (isset($_GET['gender'])) {
-            if ($_GET['gender'] === 'female') {
-                $catsByGender = array_filter($cats, function ($var) use ($femaleCats) {
-                    return ($var['gender'] == $femaleCats);
-                });
+    <div class="blue">
+        <p><?php
+            // if-statements looking at whether the user as selected male or female cats. "show all" does nothing which by result resets the choice to null.
+            if (isset($_GET['gender'])) {
+                if ($_GET['gender'] === 'female') {
+                    $catsByGender = array_filter($cats, function ($var) use ($femaleCats) {
+                        return ($var['gender'] == $femaleCats);
+                    });
 
-                $catsByGenderResult = array_values($catsByGender);
-                $cats = $catsByGenderResult;
-            } elseif ($_GET['gender'] === 'male') {
-                $catsByGender = array_filter($cats, function ($var) use ($maleCats) {
-                    return ($var['gender'] == $maleCats);
-                });
+                    $catsByGenderResult = array_values($catsByGender);
+                    $cats = $catsByGenderResult;
+                } elseif ($_GET['gender'] === 'male') {
+                    $catsByGender = array_filter($cats, function ($var) use ($maleCats) {
+                        return ($var['gender'] == $maleCats);
+                    });
 
-                $catsByGenderResult = array_values($catsByGender);
-                $cats = $catsByGenderResult;
-            }
-            $gender = $_GET['gender'];
-            echo "Showing cats where gender = $gender. ";
-        }
-
-        if (isset($_GET['sort'])) {
-            $sortCats = array();
-            foreach ($cats as $cat) {
-                foreach ($cat as $key => $value) {
-                    if (!isset($sortCats[$key])) {
-                        $sortCats[$key] = array();
-                    }
-                    $sortCats[$key][] = $value;
+                    $catsByGenderResult = array_values($catsByGender);
+                    $cats = $catsByGenderResult;
                 }
+                $gender = $_GET['gender'];
+                echo "Showing cats where gender = $gender. ";
             }
-            $orderBy = $_GET['sort'];
-            $sorted = array_multisort($sortCats[$orderBy], SORT_ASC, $cats);
-            echo "Showing cats sorted by $orderBy.";
-        }
-        ?></p>
+            // if the user picks a "sort by" option then the usort function will compare the value selected and return the array sorted by that value.
+            if (isset($_GET['sort'])) {
+                usort($cats, function ($sortby, $sorted) {
+                    $value = $_GET['sort'];
+                    return $sortby[$value] <=> $sorted[$value];
+                });
+                echo "Showing cats sorted by " . $_GET['sort'] . ".";
+            }
+            ?></p>
+    </div>
+
     <div class="gallery"><?php
                             for ($i = 0; $i < count($cats); $i++) : ?>
             <div><img src="<?php echo $cats[$i]['photo']; ?>" alt="<?php echo $cats[$i]['name'] ?> the cat" width="300px">
