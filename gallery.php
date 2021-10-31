@@ -1,4 +1,8 @@
-<?php require_once('header.php'); ?>
+<?php
+
+declare(strict_types=1);
+
+require_once('header.php'); ?>
 
 <h1>Meet our cats!</h1>
 <article>We currently have <?php echo count($cats); ?> cats available for adoption.</article>
