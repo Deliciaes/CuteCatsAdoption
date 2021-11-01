@@ -6,7 +6,8 @@ Adoption center where you can browse the cats up for adoption.
 
 # Installation
 
-Coming soon
+Start a localhost via your terminal and navigate to the index.php file via your web browser.
+A live demo is available at: https://deliciaes.com/cutecatsadoption
 
 # Code Review
 
@@ -22,5 +23,5 @@ Code review written by [Jane Doh](https://github.com/username).
 
 Tested by the following people:
 
-1. Jane Doe
+1. Nelly Svarvare Petrén
 2. John Doe
