@@ -15,7 +15,7 @@
         shuffle($cats);
         echo getCatInfo($cats); ?>
     </div>
-    <p><img src="<?php echo getCatPhoto($cats); ?>" width="350px"></p>
+    <p><img src="<?php echo getCatPhoto($cats); ?>" width="300px"></p>
     <p>
     <h5><?php echo getCatsLastUpdated($file) ?></h5>
     </p>

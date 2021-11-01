@@ -2,14 +2,6 @@
 
 require_once('header.php'); ?>
 
-<?php
-
-if (isset($_POST['name'], $_POST['email'], $_POST['phone'], $_POST['message'])) {
-    sanitizeForm($_POST['name'], $_POST['email'], $_POST['phone'], $_POST['message']);
-}
-
-
-?>
 
 <h1>Contact us</h1>
 <p>You can contact us by calling or visiting, or by filling in the form below:</p>
@@ -41,15 +33,14 @@ if (isset($_POST['name'], $_POST['email'], $_POST['phone'], $_POST['message'])) 
             <div class="blue">
                 <h2>Thank you for your message. We will get back to you. Information submitted:</h2>
                 <p>
-                <h4>Name:</h4> <?php echo $_POST['name']; ?></p>
+                <h4>Name:</h4> <?php echo $name; ?></p>
                 <p>
-                <h4>Email:</h4> <?php echo $_POST['email'] ?></p>
+                <h4>Email:</h4> <?php echo $email; ?></p>
                 <p>
-                <h4>Phone number:</h4> <?php echo $_POST['phone']; ?></p>
+                <h4>Phone number:</h4> <?php echo $phone; ?></p>
                 <p>
-                <h4>Message:</h4> <?php echo $_POST['message']; ?></p>
+                <h4>Message:</h4> <?php echo $message; ?></p>
             </div>
-
         <?php endif ?>
     </div>
 

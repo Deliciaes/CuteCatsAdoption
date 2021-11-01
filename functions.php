@@ -18,11 +18,6 @@ function getCatsLastUpdated($file)
         return "The list of available cats was last updated on: " . date("F d Y", filemtime($file));
 }
 
-// this function sanitizes the text entered in the form to prevent the user from injecting scripts to the site via the form fields.
-function sanitizeForm($name)
-{
-    return (filter_var($name, FILTER_SANITIZE_STRING));
-}
 
 //this function for bringing up a specific cat's information. is currently used in the randomized section but can also for example be used when displaying a specific cat after clicking on it (not yet implemented).
 function getCatInfo($cats)

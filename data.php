@@ -40,3 +40,9 @@ $latestWinner = 'Simon';
 $lastPrize = '1kg cat sand';
 $femaleCats = 'female';
 $maleCats = 'male';
+
+// Sanitize information entered on the contact us form
+$name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+$email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+$phone = filter_var($_POST['phone'], FILTER_SANITIZE_NUMBER_FLOAT);
+$message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);

@@ -6,7 +6,7 @@
 .gallery {
   display: grid;
   grid-auto-rows: auto;
-  grid-gap: 50px;
+  grid-gap: 15px;
   text-align: center;
 }
 
@@ -22,34 +22,6 @@
   border-radius: 5%;
 }
 
-.horizontalparent {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-.horizontal {
-  display: grid;
-  justify-content: center;
-}
-.horizontal p {
-  padding-left: 9em;
-  min-width: 455px;
-}
-.horizontal label {
-  float: left;
-  clear: none;
-  display: block;
-  padding: 0px 1em 0px 8px;
-}
-
-input[type='radio'],
-input.radio {
-  float: left;
-  clear: none;
-  margin: 2px 0 0 2px;
-}
 .box {
   font-family: 'Comfortaa';
   padding-right: 3em;
@@ -69,10 +41,10 @@ input.radio {
 
 @media screen and (min-width: 767px) {
   .gallery {
-    grid-template-columns: repeat(2, 290px);
+    grid-template-columns: repeat(2, 300px);
   }
   .gallery img {
-    max-width: 300px;
+    max-width: 290px;
   }
 }
 
