@@ -29,7 +29,11 @@ require_once('header.php'); ?>
         <p><button type="submit">Submit</button></p>
     </form>
     <div class="blueparent">
-        <?php if (isset($_POST['name'], $_POST['email'], $_POST['phone'], $_POST['message'])) : ?>
+        <?php if (isset($_POST['name'], $_POST['email'], $_POST['phone'], $_POST['message'])) :
+            $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+            $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+            $phone = filter_var($_POST['phone'], FILTER_SANITIZE_NUMBER_FLOAT);
+            $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING); ?>
             <div class="blue">
                 <h2>Thank you for your message. We will get back to you. Information submitted:</h2>
                 <p>
