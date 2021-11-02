@@ -26,4 +26,4 @@ Really nice work and well done! I love all the cute cats! :) /Linnéa
 Tested by the following people:
 
 1. Nelly Svarvare Petrén
-2. John Doe
+2. Johanna Jönsson
