@@ -2,12 +2,12 @@
 
 # Cute Cats Adoption
 
-Adoption center where you can browse the cats up for adoption.
+My first school project in php (yrgo WU21). I chose the theme: Adoption center where you can browse the cats up for adoption.
 
 # Installation
 
 Start a localhost via your terminal and navigate to the index.php file via your web browser.
-A live demo is available at: https://deliciaes.com/cutecatsadoption
+A live demo is available at: https://cutecatsadoption.deliciaes.com
 
 # Code Review
 
