@@ -4,6 +4,41 @@
 
 My first school project in php (yrgo WU21). I chose the theme: Adoption center where you can browse the cats up for adoption.
 
+# Requirements
+
+The project should use the following functionality:
+
+* Variables - at least 10 different variables
+* Multiple data types - use strings, integers, booleans, arrays (null values if you want too 🤷)
+* Arrays - use at least 1 indexed, 1 associative array and 1 multi-dimensional array
+* Functions - define at least 2 functions which accepts arguments and use at least 2 different built-in functions such as date() for example, you're free to choose which built-in functions
+* Loops (for, while or foreach) - use at least 2 loops, it can be of the same type of loop
+* Multiple files (require) - use at least 3 different PHP files and load them with require
+* Output (echo, print etc.) - you know what to do
+* The project should be written in HTML, CSS and PHP. You are allowed to use JavaScript if you feel adventures.
+
+The project should declare strict types in files containing only PHP code.
+
+The project should implement an accessible graphical user interface.
+
+The project should be uploaded to you One.com domain, you may use a sub directory for this (e.g. example.com/my-project-name).
+
+The project should not print any HTML within PHP strings.
+
+The project should not include any coding errors, warning or notices.
+
+The project should be tested on at least two of your classmates computers. Add the testers to the README.md file.
+
+The repository should be created from the template repository yrgo/template-the-elephpant-in-the-room.
+
+The repository should have at least 10 commits and not just one big commit.
+
+The repository should contain a README.md file with installation instructions and documentation.
+
+The repository should contain a LICENSE file.
+
+The repository should contain a .editorconfig file with your preferred settings.
+
 # Installation
 
 Start a localhost via your terminal and navigate to the index.php file via your web browser.
