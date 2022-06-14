@@ -29,8 +29,6 @@ The project should not include any coding errors, warning or notices.
 
 The project should be tested on at least two of your classmates computers. Add the testers to the README.md file.
 
-The repository should be created from the template repository yrgo/template-the-elephpant-in-the-room.
-
 The repository should have at least 10 commits and not just one big commit.
 
 The repository should contain a README.md file with installation instructions and documentation.
